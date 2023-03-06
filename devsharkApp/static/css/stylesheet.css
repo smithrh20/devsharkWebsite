@@ -1,0 +1,524 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html, body{
+    height: 100%;
+    background-color: darkcyan;
+
+}
+
+h1{
+    font-size: 600%;
+    font-family: Quicksand;
+    font-weight: 600;
+    color: coral;
+}
+
+h2{
+    font-size: 500%;
+    font-family: Quicksand;
+    font-weight: 100;
+    color: whitesmoke;
+}
+
+h3{
+    font-size: 300%;
+    font-family: Quicksand;
+    font-weight: 100;
+    color: whitesmoke;
+}
+
+h4{
+    font-size: 200%;
+    font-family: Quicksand;
+    font-weight: 100;
+    color: whitesmoke;
+}
+
+#wrapper{
+    width: 100%;
+    height: 100%;
+    background-color: darkcyan;
+}
+
+#navbar{
+    width: 100%;
+    height: 10%;
+    background-color: coral;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index:1;
+    top: 0;
+}
+
+#navbar a, p{
+    text-decoration: none;
+    font-size: 150%;
+    font-family: Quicksand;
+    font-weight: 200;
+    color: whitesmoke;
+    margin-right: 3%;
+    margin-left: 3%;
+}
+
+#introBlock{
+    height: 100%;
+    background-color: darkcyan;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#servicesWrapper{
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: darkcyan;
+    flex-direction: column;
+    color: whitesmoke;
+}
+
+#servicesHeader{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#servicesBlock{
+    height: 70%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: darkcyan;
+}
+
+.servicesTopic{
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 20px;
+    background-color: coral;
+    margin-left: 60px;
+    margin-right: 60px;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 414px) {
+    #servicesHeader h2{
+        font-size: 200%;
+        font-weight: 100;
+        text-align: center;
+    }
+
+    #servicesBlock{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    #servicesHeader{
+        height: 12%;
+    }
+    .servicesTopic{
+        flex-direction: column;
+        margin: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
+        padding: 10px;
+        height: 80%;
+    }
+    .servicesTopic img{
+        width: 15%;
+    }
+    .servicesTopic h3{
+        font-size: 150%;
+        font-weight: 100;
+    }
+    .servicesTopic p{
+        font-size: 100%;
+        font-weight: 100;
+    }
+}
+
+#whyWebsiteWrapper{
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: darkcyan;
+    flex-direction: column;
+    color: whitesmoke;
+}
+
+#whyWebsiteHeader{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#whyWebsiteBlock{
+    height: 70%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: darkcyan;
+}
+
+@media only screen and (max-width: 414px) {
+    #whyWebsiteHeader h2{
+        font-size: 200%;
+        font-weight: 100;
+        text-align: center;
+    }
+
+    #whyWebsiteBlock{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    #whyWebsiteHeader{
+        height: 12%;
+    }
+    .servicesTopic{
+        flex-direction: column;
+        margin: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
+        padding: 10px;
+        height: 75%;
+    }
+    .servicesTopic img{
+        width: 15%;
+    }
+    .servicesTopic h3{
+        font-size: 150%;
+        font-weight: 100;
+    }
+    .servicesTopic p{
+        font-size: 100%;
+        font-weight: 100;
+    }
+}
+
+
+#coercionWrapper{
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: darkcyan;
+    flex-direction: column;
+    color: whitesmoke;
+}
+
+#coercionHeader{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#coercionBlock{
+    height: 70%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: darkcyan;
+}
+
+@media only screen and (max-width: 414px) {
+    #coercionHeader h2{
+        font-size: 200%;
+        font-weight: 100;
+        text-align: center;
+    }
+
+    #coercionBlock{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    #coercionHeader{
+        height: 12%;
+    }
+    .servicesTopic{
+        flex-direction: column;
+        margin: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
+        padding: 10px;
+        height: 80%;
+    }
+    .servicesTopic img{
+        width: 15%;
+    }
+    .servicesTopic h3{
+        font-size: 150%;
+        font-weight: 100;
+    }
+    .servicesTopic p{
+        font-size: 100%;
+        font-weight: 100;
+    }
+}
+
+#contactWrapper{
+    height: 90%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    color: whitesmoke;
+}
+
+#contactHeader{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: darkcyan;
+}
+
+#contactBlock{
+    height: 80%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: .5fr 1fr;
+    background-color: #008b8b;
+    overflow: hidden;
+}
+
+#callTopic{
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #ff7f50;
+    margin-left: 60px;
+    margin-right: 60px;
+    border-radius: 10px;
+}
+
+#emailTopic{
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    background-color: coral;
+    margin-left: 60px;
+    margin-right: 60px;
+    border-radius: 10px;
+}
+
+#emailTopic form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+}
+
+#emailForm{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.formInput{
+    height: 10%;
+    width: 40%;
+    padding: 8px 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-width: 5px;
+    border-radius: 10px;
+    background-color: rgba(245, 245, 245, 0);
+    border-color: whitesmoke;
+    border-style: solid;
+    color: whitesmoke;
+}
+
+label{
+    font-family: Quicksand;
+    font-size: 125%;
+}
+
+.contentInput{
+    height: 80%;
+    width: 55%;
+    padding: 8px 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-width: 5px;
+    border-radius: 10px;
+    background-color: rgba(245, 245, 245, 0);
+    border-color: whitesmoke;
+    border-style: solid;
+    color: whitesmoke;
+}
+
+#formSubmit{
+    height: 10%;
+    width: 60%;
+    color: whitesmoke;
+    background-color: coral;
+    border-color: whitesmoke;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 10px;
+    font-size: 150%;
+    font-family: Quicksand;
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 414px) {
+    #contactHeader h2{
+        font-size: 200%;
+        font-weight: 100;
+        text-align: center;
+    }
+    #contactBlock{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    #contactHeader{
+        height: 12%;
+    }
+    #callTopic{
+        flex-direction: row;
+        margin: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
+        padding: 10px;
+        flex-wrap: wrap;
+    }
+    #callTopic h2{
+        font-size: 200%;
+        font-weight: 100;
+    }
+    #callTopic h3{
+        font-size: 175%;
+    }
+    #callTopic h4{
+        padding: 10px;
+        font-size: 150%;
+    }
+    #callTopic p{
+        font-size: 100%;
+        font-weight: 100;
+    }
+    #emailTopic{
+        height: 100%;
+        flex-direction: row;
+        margin: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
+        padding: 10px;
+        flex-wrap: wrap;
+    }
+    #emailTopic h2{
+        font-size: 200%;
+        font-weight: 100;
+    }
+    #emailTopic h3{
+        font-size: 175%;
+    }
+    #emailTopic h4{
+        padding: 10px;
+        font-size: 150%;
+    }
+    #emailTopic p{
+        font-size: 100%;
+        font-weight: 100;
+    }
+    #emailForm{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .formInput{
+        height: 7%;
+        width: 100%;
+        padding: 0px 4px;
+        margin: 4px 0;
+        box-sizing: border-box;
+        border-width: 3px;
+        border-radius: 10px;
+        background-color: rgba(245, 245, 245, 0);
+        border-color: whitesmoke;
+        border-style: solid;
+        color: whitesmoke;
+        font-size: 60%;
+    }
+    label{
+        font-family: Quicksand;
+        font-size: 75%;
+    }
+    .contentInput{
+        width: 100%;
+        height: 30%;
+        padding: 4px 5px;
+        margin: 4px 0;
+        box-sizing: border-box;
+        border-width: 3px;
+        border-radius: 10px;
+        background-color: rgba(245, 245, 245, 0);
+        border-color: whitesmoke;
+        border-style: solid;
+        color: whitesmoke;
+    }
+    #formSubmit{
+        height: 7%;
+        width: 40%;
+        border-width: 3px;
+        font-size: 125%;
+    }
+}
+
+#footer{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media only screen and (max-width: 414px) {
+    #introBlock h1 {
+        font-size: 300%;
+        font-weight: 100;
+    }
+    #introBlock h3 {
+        font-size: 125%;
+        font-weight: 100;
+        text-align: center;
+    }
+    #introBlock img {
+        width: 30%;
+    }
+
+}

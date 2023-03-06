@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/stylesheet.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="navbar">
+        <a href="">My Work</a>
+        <p> - </p>
+        <img src="{% static 'images/devSharkLogoInvert.png' %}" alt="" width="4%">
+        <p> - </p>
+        <a href="#contactWrapper">Contact Me</a>
+    </div>
+    <div id="introBlock">
+            <img src="{% static 'images/devSharkLogo2.png' %}" alt="" width="20%">
+            <h1>DevShark</h1>
+            <h3>Don't be scared, I'm a friendly shark.</h3>
+            <h3>Need a website? I can help with that.</h3>
+    </div>
+    <div id="whyWebsiteWrapper">
+        <div id="whyWebsiteHeader">
+        <h2>Why Do You Need A Website?</h2>
+        </div>
+        <div id="whyWebsiteBlock">
+            <div class="servicesTopic">
+                <img src="{% static 'images/lookProfessionalIcon.png' %}" alt="" width="50%">
+                <h3>Look Professional</h3>
+                <p>Your website is likely the first thing your customers will see. So you want to make a good first impression.</p>
+            </div>
+            <div class="servicesTopic">
+                <img src="{% static 'images/outreachIcon.png' %}" alt="" width="50%">
+                <h3>Build Your Outreach</h3>
+                <p>Google searches are a major way people will find your services. Google puts buisness with websites closer to the top of searches.</p>
+            </div>
+            <div class="servicesTopic">
+                <img src="{% static 'images/advertisingIcon.png' %}" alt="" width="50%">
+                <h3>24/7 Advertising</h3>
+                <p>Customers will be able to view your website and get familiar with services you offer even outside of buisness hours.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="servicesWrapper">
+        <div id="servicesHeader">
+        <h2>What Services Do I Offer?</h2>
+        </div>
+        <div id="servicesBlock">
+            <div class="servicesTopic">
+                <img src="{% static 'images/webdesignIcon.png' %}" alt="" width="50%">
+                <h3>Web Design</h3>
+                <p>Need a custom website but don't know how to code? Well, I do. Get in touch with me and we can work together to design you the perfect website. No pre-made templates involved.</p>
+            </div>
+            <div class="servicesTopic">
+                <img src="{% static 'images/SEOIcon.png' %}" alt="" width="50%">
+                <h3>SEO</h3>
+                <p>This is example text made to give an example of what might be here if there was real text. But there isn't any right now. So sad :(. Do you think this box ever gets lonely?</p>
+            </div>
+            <div class="servicesTopic">
+                <img src="{% static 'images/webHostingIcon.png' %}" alt="" width="50%">
+                <h3>Web Hosting</h3>
+                <p>This is example text made to give an example of what might be here if there was real text. But there isn't any right now. So sad :(. Do you think this box ever gets lonely?</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="coercionWrapper">
+        <div id="coercionHeader">
+            <h2>Why Choose Me?</h2>
+        </div>
+            <div id="coercionBlock">
+                <div class="servicesTopic">
+                    <img src="{% static 'images/iCodeIcon.png' %}" alt="" width="30%">
+                    <h3>I Know How To Code</h3>
+                    <p>Most "Web Designers" buy pre-made templates from other developers online. They then resell that to small buisnesses and change the text and colors to better match that company. 
+                    Unlike them, I know how to code. I can build your website from scratch and make it just how you want it. If thier is ever a problem or you want to change it, I can do that too.</p>
+                </div>
+                <div class="servicesTopic">
+                    <img src="{% static 'images/workWithYouIcon.png' %}" alt="" width="30%">
+                    <h3>I Can Work With You</h3>
+                    <p>I want to take the time to make sure your website reflects your buisness. We can talk over email, on the phone, or meet in person to discuss what you need to give me a good idea 
+                        of what you need so you get the most out of your purchase.</p>
+                </div>
+            </div>
+        </div>
+</body>
+        <div id="contactWrapper">
+            <div id="contactHeader">
+                <h2>Contact Me</h2>
+            </div>
+                <div id="contactBlock">
+                    <div id="callTopic">
+                        <h3>Phone:</h3>
+                        <p>(440) 990-9489</p>
+                        <br>
+                        <br>
+                        <h3>Available:</h3>
+                        <p>Tues-Fri: 7-12pm</p>
+                    </div>
+                    <div id="emailTopic">
+                        <h3>Email Me Anytime</h3>
+                        <div id="emailForm">
+                            {% if submitted %}
+                            <p>Your message has been sent. <br>
+                                I'll get back to you as soon as I can.
+                            </p>
+                        {% else %}
+                            <form action="" method="post" novalidate>
+                                    {{ form.as_table }}
+                                    <input type="submit" value="Submit" id="formSubmit">
+                                {% csrf_token %}
+                            </form>
+                        </div>
+                        {% endif %}
+                    </div>
+                </div>
+        </div>
+                <div id="footer">
+                    <img src="{% static 'images/devsharkLogoInvert" alt="">
+                    <p>Copyright © 2022 Devshark.LLC</p>
+                </div>
+            </div>
+</body>
+
+<script>
+    
+gsap.timeline()
+        .from("#introBlock img, h1", {opacity:0, y:-100 , duration:.5})
+        .from("#introBlock h3", {opacity:0, y: 200, duration: .5})
+
+    gsap.timeline({scrollTrigger: {trigger:"#whyWebsiteHeader", start: "top center", toggleActions:"restart none none none"}})
+        .from("#whyWebsiteHeader", {delay:.5, opacity:0, y:-100, duration: .5})
+        .from("#whyWebsiteBlock", {opacity:0, y: 200, duration: .5})
+
+    gsap.timeline({scrollTrigger: {trigger:"#servicesHeader", start: "top center", toggleActions:"restart none none none"}})
+        .from("#servicesHeader", {delay:.5, opacity:0, y:-100, duration: .5})
+        .from("#servicesBlock", {opacity:0, y: 200, duration: .5})
+
+        gsap.timeline({scrollTrigger: {trigger:"#coercionHeader", start: "top center", toggleActions:"restart none none none"}})
+        .from("#coercionHeader", {delay:.5,opacity:0, y:-100, duration: .5})
+        .from("#coercionBlock", {opacity:0, y: 200, duration: .5})
+
+    gsap.timeline({scrollTrigger: {trigger:"#contactWrapper", start: "top bottom", toggleActions:"restart none none none"}})
+        .from("#contactHeader", {delay:.5, opacity:0, y: -400, duration: .5})
+        .from("#callTopic", {opacity:0, x: -400, duration: .5})
+        .from("#emailTopic", {opacity:0, x: 400, duration: .5})
+
+        gsap.to(window, {duration: 2, scrollTo: "#whyWebsiteWrapper"});
+
+</script>
+
+</html>
