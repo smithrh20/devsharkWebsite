@@ -1,1 +1,1 @@
-web: guncorn devshark.wsgi
+web: gunicorn devshark.wsgi
