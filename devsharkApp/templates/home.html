@@ -112,10 +112,9 @@
                                 I'll get back to you as soon as I can.
                             </p>
                         {% else %}
-                            <form action="" method="post" novalidate>
+                            <form action="" method="post" novalidate>{% csrf_token %}
                                     {{ form.as_table }}
                                     <input type="submit" value="Submit" id="formSubmit">
-                                {% csrf_token %}
                             </form>
                         </div>
                         {% endif %}
